@@ -131,13 +131,6 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <iframe width="760" height="560" src="https://www.youtube.com/embed/hGnCfksRGHA?si=i7BCb2Lge99cf2Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -176,7 +169,7 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-task208">
-          <video poster="" id="task208" autoplay muted loop playsinline height="100">
+          <video poster="" id="task208" autoplay muted loop playsinline height="100%">
             <source src="./static/videos/rotation.mp4"
                     type="video/mp4">
           </video>
@@ -263,40 +256,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3"><a id="learning-itw">Data Collection in the Wild</a></h2>
         <div class="column">
-          <video id="result1" autoplay muted loop playsinline height="50%">
+          <video id="result1" autoplay muted loop playsinline height="25%">
             <source src="./static/videos/data_collection.mp4"
                     type="video/mp4">
           </video>
-        </div>
-        <div class="column">
-              <!-- Data Link. -->
-              <span class="link-block">
-                <a href="https://drive.google.com/drive/folders/1f_bmrFPep90aUSBj28TdXRiNvHo7PpxR?usp=drive_link"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Sample Demonstration Data</span>
-                </a>
-              </span>              
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/AirExo/act-in-the-wild"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-        </div>
-        <div class="content has-text-justified">
-          <div class="column">
-          <img src="static/images/learning-itw.png"></img>
-          </div>
-          <p>
-            <b><i>AirExo</i></b> serves as a natural bridge for the kinematic gap between humans and robots. To address the domain gap between images, our approach involves a two-stage training process. In the first stage, we pre-train the policy using in-the-wild human demonstrations and actions recorded by the exoskeleton encoders. During this phase, the policy primarily learns the high-level task execution strategy from the large-scale and diverse in-the-wild human demonstrations. Subsequently, in the second stage, the policy undergoes fine-tuning using teleoperated demonstrations with robot actions to refine the motions based on the previously acquired high-level task execution strategy.
-          </p>
         </div>
       </div>
     </div>
@@ -315,137 +278,12 @@
                       type="video/mp4">
             </video>
           </div>
-          <p>
-            We evaluate the performance of different methods on  the "Gather Balls" task. After applying our in-the-wild learning framework, with the assistance of in-the-wild demonstrations, ACT can achieve the same level of performance as 50 teleoperated demonstrations with just 10 teleoperated demonstrations. This demonstrates that our learning framework with in-the-wild demonstrations makes the policy more sample-efficient for teleoperated demonstrations.
-          </p>
-          <p>
-            <details>
-              <summary style="color:slateblue">&nbsp;<b>Links to  full videos in this experiment.</b></summary>
-              <br>
-            <table style="text-align:center">
-              <tr><td><b># Teleoperated Demonstrations</b></td> <td><b># In-the-Wild Demonstrations</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
-              <tr></tr>
-              <tr>
-                <td>50</td><td>-</td><td>VIP + NN</td> <td><a href="https://youtu.be/HTcxeEhi5p4">Link</a></td>
-              </tr>
-              <tr>
-                <td>50</td><td>-</td><td>VC-1 + NN</td> <td><a href="https://youtu.be/jDO4wiU-3ow">Link</a></td>
-              </tr>
-              <tr>
-                <td>50</td><td>-</td><td>MVP + NN</td> <td><a href="https://youtu.be/w3gp-_cFVrQ">Link</a></td>
-              </tr>
-              <tr>
-                <td>50</td><td>-</td><td>VINN</td> <td><a href="https://youtu.be/CVMD41ZGvMI">Link</a></td>
-              </tr>
-              <tr>
-                <td>50</td><td>-</td><td>ConvMLP</td> <td><a href="https://youtu.be/oVjgKlvzG34">Link</a></td>
-              </tr>
-              <tr>
-                <td>50</td><td>-</td><td>BeT</td> <td><a href="https://youtu.be/H6SsaK_f16k">Link</a></td>
-              </tr>
-              <tr>
-                <td>50</td><td>-</td><td>ACT</td> <td><a href="https://youtu.be/_AwjfN4wgxo">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>-</td><td>VINN</td> <td><a href="https://youtu.be/GS9mbfLY-lA">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>-</td><td>ACT</td> <td><a href="https://youtu.be/H6SsaK_f16k">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>50</td><td>ACT</td> <td><a href="https://youtu.be/_I-RvZPCYSg">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>100</td><td>ACT</td> <td><a href="https://youtu.be/nYQoMoWeTdk">Link</a></td>
-              </tr>
-              </table>
-            </details>
-          </p>
-          <div class="column">
-            <video id="result2" autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/result2.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <p>
-            We also evaluate the performance of different methods on the "Grasp from the Curtained Shelf" task. After training with our in-the-wild learning framework, ACT exhibits a significant improvement in success rates in the "grasp" and "throw" stages. It achieves even higher success rates, surpassing those obtained with the original set of 50 teleoperated demonstrations lasting more than 20 minutes, using only 10 such demonstrations lasting approximately 3 minutes.  This highlights that our proposed in-the-wild framework indeed enables the policy to learn a better strategy, effectively enhancing the success rates in the later stages of multi-stage tasks.
-          </p>
-          <p>
-            <details>
-              <summary style="color:slateblue">&nbsp;<b>Links to  full videos in this experiment.</b></summary>
-              <br>
-            <table style="text-align:center">
-              <tr><td><b># Teleoperated Demonstrations</b></td> <td><b># In-the-Wild Demonstrations</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
-              <tr></tr>
-              <tr>
-                <td>50</td><td>-</td><td>VINN</td> <td><a href="https://youtu.be/ddWwnBy4Iw4">Link</a></td>
-              </tr>
-              <tr>
-                <td>50</td><td>-</td><td>ACT</td> <td><a href="https://youtu.be/R-X5ZXFpg7Q">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>-</td><td>VINN</td> <td><a href="https://youtu.be/8_lM1SaUma0">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>-</td><td>ACT</td> <td><a href="https://youtu.be/x8nTK02A0Cw">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>50</td><td>ACT</td> <td><a href="https://youtu.be/beUuG9tUM50">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>100</td><td>ACT</td> <td><a href="https://youtu.be/NW9T2SeH0Uk">Link</a></td>
-              </tr>
-              </table>
-            </details>
-            </p>
-            <div class="column">
-              <video id="result3" autoplay muted loop playsinline height="100%">
-                <source src="./static/videos/result3.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <p>
-              We then evaluate the policy performance when adding some disturbances in the experimental environment. The results demonstrate that our in-the-wild learning framework can leverage diverse in-the-wild demonstrations to make the learned policy more robust and generalizable to various environmental disturbances.
-            </p>
-
-          <p>
-            <details>
-              <summary style="color:slateblue">&nbsp;<b>Links to  full videos in this experiment.</b></summary>
-              <br>
-            <table style="text-align:center">
-              <tr><td><b># Teleoperated Demonstrations</b></td> <td><b># In-the-Wild Demonstrations</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
-              <tr></tr>  
-              <tr>
-                <td>10</td><td>-</td><td>ACT</td> <td><a href="https://youtu.be/e9SkaHP4U90">Link</a></td>
-              </tr>
-              <tr>
-                <td>10</td><td>100</td><td>ACT</td> <td><a href="https://youtu.be/cEhb6YDLkgU">Link</a></td>
-              </tr>
-              </table>
-            </details>
-          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <div class="columns is-centered has-text-centered">
-    <h2 class="title">BibTeX</h2>
-    </div>
-    <pre><code>@inproceedings{fang2024airexo,
-  title =        {AirExo: Low-Cost Exoskeletons for Learning Whole-Arm Manipulation in the Wild},
-  author =       {Fang, Hongjie and Fang, Hao-Shu and Wang, Yiming and Ren, Jieji and Chen, Jingjing and Zhang, Ruo and Wang, Weiming and Lu, Cewu},
-  booktitle =    {2024 IEEE International Conference on Robotics and Automation (ICRA)},
-  pages =        {15031--15038},
-  year =         {2024},
-  organization = {IEEE}
-}
-</code></pre>
-  </div>
-</section>
 
 <footer class="footer">
   <div class="container">
