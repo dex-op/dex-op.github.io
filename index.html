@@ -18,7 +18,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.png">
+  <link rel="icon" href="./static/images/dexop.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -45,7 +45,7 @@
       </span>
       </a>
 
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
+      <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
         </a>
@@ -53,11 +53,8 @@
           <a class="navbar-item" href="https://eyesighthand.github.io/">
             Eyesight Hand
           </a>
-          <a class="navbar-item" href="https://airexo.github.io/">
-            AirExo
-          </a>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </nav>
@@ -82,6 +79,7 @@
               <a>Matthew Kim</a><sup>1</sup>,</span>
              <a>Gabe Margolis</a><sup>1</sup>,</span>
               <a>Kavya Anbarasu</a><sup>1</sup>,</span>
+              <a>Masayoshi Tomizuka</a><sup>2</sup>,</span>
               <a>Edward Adelson</a><sup>1</sup>,</span>
               <a>Pulkit Agrawal</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -122,7 +120,7 @@
         <h2 class="title is-3"><a id="abstract">Abstract</a></h2>
         <div class="content has-text-justified">
           <p>
-            We introduce DEXOP, a novel passive hand exoskeleton system designed to collect robots dexterous manipulation in-the-wild, without needing a real robot. Traditional teleoperation systems for high DoF dexterous hands are usually expensive and limited by the lack of intuitive feedback to human teleoperator. DEXOP allows human users to directly control a robot’s dexterous hand through a passive exoskeleton system, where the human fingers are mechanically connected to the robot fingers, controlling the robot hand while also feeling the force applied to the robot hand seamlessly. By optimizing the kinematic configuration and providing high force transparency, human users can control a robot's hand just like controlling their own hand. Equipped with precise position encoders and tactile sensors, DEXOP captures high-fidelity dexterous manipulation data, facilitating manipulation learning without the need for costly hardware or careful engineering. We evaluate the system across multiple dexterous tasks, demonstrating its capability to accomplish highly dexterous, contact-rich tasks and its potential to scale the collection of high-quality demonstration data. Learning experiments show significant improvements in the performance-time ratio compared to  teleoperation method, making DEXOP a powerful tool for advancing robot dexterity.
+            We introduce <strong>DEXOP</strong>, a passive hand exoskeleton system designed to maximize human ability to collect sensory rich (vision + tacile) data for diverse tasks in the wild, without requiring a real robot. In contrast to teleoperation, We propose <strong>exoperation</strong>, an alternative paradigm that sensorizes and records human manipulation with hardwares like exoskeleton. DEXOP mechanically connected the human fingers to the robot fingers, enabling users to control a passive robot hand while seamlessly experiencing the forces applied to it. By optimizing the kinematic configuration and ensuring high force transparency, users can control a robot's hand as naturally as their own. Equipped with precise position encoders and tactile sensors, DEXOP captures high-fidelity manipulation data, enabling learning without the need for costly hardware or intricate engineering. We evaluate the system across a range of dexterous, contact-rich tasks, demonstrating its ability to collect high-quality demonstration data at scale. Learning experiments show significant improvements in the performance-to-time ratio compared to traditional teleoperation, making DEXOP a powerful tool for advancing robot dexterity.
           </p>
         </div>
       </div>
@@ -151,27 +149,33 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-task208">
+          <video poster="" id="task208" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/reorientation-small.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
         <div class="item item-task9">
           <video poster="" id="task" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/coin.MOV"
+            <source src="./static/videos/coin.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-task11">
           <video poster="" id="task11" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/assembly.MOV"
+            <source src="./static/videos/screw-small.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-task11">
+          <video poster="" id="task11" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/syringe-small.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-task19">
           <video poster="" id="task19" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/plasticbag.MOV"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-task208">
-          <video poster="" id="task208" autoplay muted loop playsinline style="width: 75%; height: auto;">
-            <source src="./static/videos/rotation.mp4"
+            <source src="./static/videos/package-small.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -203,25 +207,25 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-task208">
           <video poster="" id="task208" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/bottle.mov"
+            <source src="./static/videos/chives-small.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-task9">
           <video poster="" id="task" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/cutter.mov"
+            <source src="./static/videos/papercut-small.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-task11">
           <video poster="" id="task11" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/iron.MOV"
+            <source src="./static/videos/iron-small.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-task19">
           <video poster="" id="task19" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/spenser.MOV"
+            <source src="./static/videos/spray-small.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -240,7 +244,7 @@
         <h2 class="title is-3"><a id="learning-itw">Data Collection in the Wild</a></h2>
         <div class="column">
           <video id="result1" autoplay muted loop playsinline style="width: 50%; height: auto;">
-            <source src="./static/videos/data_collection.mp4"
+            <source src="./static/videos/fulldatacollection-small.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -253,11 +257,15 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"><a id="experiments">Experimental Results</a></h2>
+        <h2 class="title is-3"><a id="experiments">Policy Rollout</a></h2>
         <div class="content has-text-justified">
           <div class="column">
             <video id="result1" autoplay muted loop playsinline height="100%">
               <source src="./static/videos/rollout.mov"
+                      type="video/mp4">
+            </video>
+            <video id="result1" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/policy-small-speed-small.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -276,7 +284,7 @@
           <p>
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>. Modified upon original <a href="https://nerfies.github.io/"> Nerfies </a> website (<a href="https://github.com/nerfies/nerfies.github.io">source</a>). The exoskeleton icon is modified upon the initial icon by <a href="https://www.flaticon.com/free-icons/exoskeleton" title="exoskeleton icons">surang @ Flaticon</a>.
+            Commons Attribution-ShareAlike 4.0 International License</a>. Modified upon original <a href="https://nerfies.github.io/"> Nerfies </a> website (<a href="https://github.com/nerfies/nerfies.github.io">source</a>).
           </p>
         </div>
       </div>
