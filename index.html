@@ -66,31 +66,32 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DEXOP: Dexterous Exoperation In-The-Wild</h1>
+          <h1 class="title is-1 publication-title">DEXOP: A Device for Robotic Transfer of Dexterous Human Manipulation</h1>
           <h4 class="title is-4 conference">Best Paper Award @ RSS 2025 Dexterous Manipulation Workshop</h4>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://fang-haoshu.github.io/">Hao-Shu Fang</a><sup>1</sup>,</span>
-              <a>Branden Romero</a><sup>*1</sup>,</span>
-              <a href="https://yichen928.github.io/">Yichen Xie</a><sup>*2</sup>,</span>
-              <a href="https://www.linkedin.com/in/arthur-hu-38a10523b">Arthur Hu</a><sup>*1</sup>,</span>
-              <a href="https://borueihuang.com/">Bo-Ruei Huang</a><sup>1</sup>,</span>
-              <a>Juan Alvarez</a><sup>1</sup>,</span>
-              <a>Matthew Kim</a><sup>1</sup>,</span>
-             <a href="https://gmargo11.github.io/">Gabe Margolis</a><sup>1</sup>,</span>
-              <a>Kavya Anbarasu</a><sup>1</sup>,</span>
-              <a>Masayoshi Tomizuka</a><sup>2</sup>,</span>
-              <a href="https://persci.mit.edu/people/adelson/">Edward Adelson</a><sup>1</sup>,</span>
-              <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a><sup>1</sup>,</span>
+              <a href="https://fang-haoshu.github.io/">Hao-Shu Fang</a><sup>1,2</sup>,</span>
+              <a>Branden Romero</a><sup>*1,2</sup>,</span>
+              <a href="https://yichen928.github.io/">Yichen Xie</a><sup>*3</sup>,</span>
+              <a href="https://www.linkedin.com/in/arthur-hu-38a10523b">Arthur Hu</a><sup>*2</sup>,</span>
+              <a href="https://borueihuang.com/">Bo-Ruei Huang</a><sup>2</sup>,</span>
+              <a>Juan Alvarez</a><sup>2</sup>,</span>
+              <a>Matthew Kim</a><sup>2</sup>,</span>
+             <a href="https://gmargo11.github.io/">Gabe Margolis</a><sup>1,2</sup>,</span>
+              <a>Kavya Anbarasu</a><sup>2</sup>,</span>
+              <a>Masayoshi Tomizuka</a><sup>3</sup>,</span>
+              <a href="https://persci.mit.edu/people/adelson/">Edward Adelson</a><sup>2</sup>,</span>
+              <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a><sup>1,2</sup>,</span>
             <span class="author-block">
           </div>
 
           <div class="is-size-5 publication-authors">
-            <sup>1</sup><span class="author-block">MIT</span>
-            <sup>2</sup><span class="author-block">UCB</span>
+            <sup>1</sup><span class="author-block">Improbable AI Lab</span>
+            <sup>2</sup><span class="author-block">Massachusetts Institute of Technology</span>
+            <sup>3</sup><span class="author-block">UC Berkeley</span>
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">(* = Equal Contribution, <a href="mailto:fhs@mit.edu">fhs@mit.edu</a>)</span>
+            <span class="author-block">(* = Equal Contribution, <a href="mailto:fhs@mit.edu">fhs@mit.edu</a>, <a href="mailto:pulkitag@mit.edu">pulkitag@mit.edu</a>)</span>
           </div>
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -120,7 +121,15 @@
         <h2 class="title is-3"><a id="abstract">Abstract</a></h2>
         <div class="content has-text-justified">
           <p>
-            We introduce <strong>DEXOP</strong>, a passive hand exoskeleton system designed to maximize human ability to collect sensory rich (vision + tacile) data for diverse tasks in the wild, without requiring a real robot. In contrast to teleoperation, We propose <strong>exoperation</strong>, an alternative paradigm that sensorizes and records human manipulation with hardwares like exoskeleton. DEXOP mechanically connected the human fingers to the robot fingers, enabling users to control a passive robot hand while seamlessly experiencing the forces applied to it. By optimizing the kinematic configuration and ensuring high force transparency, users can control a robot's hand as naturally as their own. Equipped with precise position encoders and tactile sensors, DEXOP captures high-fidelity manipulation data, enabling learning without the need for costly hardware or intricate engineering. We evaluate the system across a range of dexterous, contact-rich tasks, demonstrating its ability to collect high-quality demonstration data at scale. Learning experiments show significant improvements in the performance-to-time ratio compared to traditional teleoperation, making DEXOP a powerful tool for advancing robot dexterity.
+          We introduce <b><em>perioperation</em></b>, a paradigm for robotic data collection that sensorizes and records human manipulation 
+            while maximizing the transferability of the data to real robots. We implement this paradigm in <strong>DEXOP</strong>, a passive hand exoskeleton 
+            designed to maximize human ability to collect rich sensory (vision + tactile) data for diverse dexterous manipulation tasks in natural environments.
+            DEXOP mechanically connects human fingers to robot fingers, 
+            providing users with direct contact feedback (via proprioception) and mirrors the human hand pose to the passive robot hand during manipulation. 
+            The force feedback and pose mirroring make task performance more natural for humans compared to teleoperation, increasing both speed and accuracy. 
+            We evaluate DEXOP across a range of dexterous, contact-rich tasks, demonstrating its ability to collect high-quality demonstration data at scale. 
+            Learning experiments demonstrate that data collected with \dexop leads to significantly higher task performance per unit time compared to traditional
+            teleoperation, making DEXOP a powerful tool for advancing robot dexterity.  
           </p>
         </div>
       </div>
@@ -163,7 +172,7 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Precise Dexterous Manipulation</h2>
+        <h2 class="title is-3">Precise Dexterous Perioperation</h2>
         <div class="content has-text-justified">
           <p>
             We show some examples of precise dexterous manipulation that mainly involves fingertip of the hand. All videos are played with <strong>1X</strong> speed.
@@ -219,10 +228,10 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Full-hand Dexterous Manipulation</h2>
+        <h2 class="title is-3">Whole-hand Dexterous Perioperation</h2>
         <div class="content has-text-justified">
           <p>
-            We show some examples of full-hand dexterous manipulation that involves both the fingers and the palm. All videos are played with <strong>1X</strong> speed.
+            We show some examples of whole-hand dexterous manipulation that involves both the fingers and the palm. All videos are played with <strong>1X</strong> speed.
           </p>
         </div>
       </div>
